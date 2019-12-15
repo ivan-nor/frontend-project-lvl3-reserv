@@ -1,21 +1,22 @@
-install:
-	npm install
+install: install-deps install-flow-typed
 
-start:
-	npx babel-node src/index.js
+develop:
+	npx webpack-dev-server
+
+install-deps:
+	npm install
 
 build:
 	rm -rf dist
-	npm run build
-
-publish:
-	npm publish
-
-lint:
-	npx eslint .
+	NODE_ENV=production npx webpack
 
 test:
 	npm test
 
-test-coverage:
-	npm test -- --coverage
+lint:
+	npx eslint .
+
+publish:
+	npm publish
+
+.PHONY: test
