@@ -1,1 +1,3 @@
-export default (a, b) => a + b;
+import half from './half';
+
+export default half;
