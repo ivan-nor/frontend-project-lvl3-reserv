@@ -1,17 +1,20 @@
-install: install-deps install-flow-typed
+install: install-deps
 
-develop:
-	npx webpack-dev-server
+run:
+	npx babel-node 'src/bin/hexlet.js' 10
 
 install-deps:
-	npm install
+	npm ci
 
 build:
 	rm -rf dist
-	NODE_ENV=production npx webpack
+	npm run build
 
 test:
 	npm test
+
+test-coverage:
+	npm test -- --coverage
 
 lint:
 	npx eslint .
