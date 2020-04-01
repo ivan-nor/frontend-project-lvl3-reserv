@@ -1,0 +1,11 @@
+$background-color: cornsilk;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: $background-color;
+}
+
+.jumbotron {
+    background-color: $background-color / 1.2;
+}

@@ -1,3 +1,4 @@
-import half from './half';
+import './style/app.scss';
+import app from './app';
 
-export default half;
+console.log(app());
