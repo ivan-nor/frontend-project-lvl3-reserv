@@ -8,7 +8,7 @@ install-deps:
 
 build:
 	rm -rf dist
-	NODE_ENV=production npx webpack --mode development
+	npx webpack
 
 develop:
 	npx webpack-dev-server
