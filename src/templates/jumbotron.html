@@ -1,9 +1,11 @@
 <div class="jumbotron">
-  <h1 class="display-4">Привет, мир!</h1>
-  <p class="lead">Это простой пример блока с компонентом в стиле jumbotron для привлечения дополнительного внимания к содержанию или информации.</p>
-  <hr class="my-4">
-  <p>Использются служебные классы для типографики и расстояния содержимого в контейнере большего размера.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button" onclick="console.log('newJUM')">Learn more</a>
-  </p>
+  <form data-form="rss" method="post">
+    <div class="form-group">
+      <label for="rssInput">rss input</label>
+      <!-- Если поле невалидно, то добавляется класс is-invalid -->
+      <input id="rssInput" type="text" class="form-control" name="rssInput">
+      <div class="invalid-feedback">Value is not a valid email</div>
+    </div>
+    <input type="submit" class="btn btn-primary" disabled="" value="Submit">
+  </form>
 </div>
