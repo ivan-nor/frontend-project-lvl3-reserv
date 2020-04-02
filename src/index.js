@@ -1,4 +1,4 @@
-// import './style/app.scss';
-import app from './app';
+import './style/app.scss';
+import app from './app/application';
 
-console.log(app());
+app();
