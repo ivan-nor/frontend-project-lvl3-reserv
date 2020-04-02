@@ -1,14 +1,6 @@
-install: install-deps
-
-run:
-	npx babel-node 'src/bin/hexlet.js' 10
-
-install-deps:
-	npm ci
-
 build:
 	rm -rf dist
-	npx webpack
+	NODE_ENV=production npx webpack
 
 develop:
 	npx webpack-dev-server
@@ -21,8 +13,3 @@ test-coverage:
 
 lint:
 	npx eslint .
-
-publish:
-	npm publish
-
-.PHONY: test
