@@ -1,8 +1,10 @@
-// import jumbotron from '../src/app/jumbotron';
-// import path from 'path';
+/**
+ * @jest-environment jsdom
+ */
+
 import app from '../src/app/application';
 
-const expected = 'app/index.js is runned';
+const expected = 'app/application.js is runned';
 
 test('', () => {
   expect(app()).toBe(expected);

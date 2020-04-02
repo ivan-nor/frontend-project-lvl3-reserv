@@ -20,15 +20,17 @@ export default () => {
     console.log('isValid changed');
   });
 
-  const form = document.querySelector('[data-form="rss"]');
+  // const form = document.querySelector('[data-form="rss"]');
   // console.log(form.elements);
 
-  [...form.elements].forEach((element) => {
-    element.addEventListener('input', (event) => {
-      event.preventDefault();
-      state.inputValue = event.target.value;
-      state.isValid.input = validation(state.inputValue);
-      console.log('input');
-    });
-  });
+  // [...form.elements].forEach((element) => {
+  //   element.addEventListener('input', (event) => {
+  //     event.preventDefault();
+  //     state.inputValue = event.target.value;
+  //     state.isValid.input = validation(state.inputValue);
+  //     console.log('input');
+  //   });
+  // });
+
+  return 'app/application.js is runned';
 };
