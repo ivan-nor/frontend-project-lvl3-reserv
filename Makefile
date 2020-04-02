@@ -1,6 +1,11 @@
+install: install-deps
+
+install-deps:
+	npm i
+
 build:
 	rm -rf dist
-	NODE_ENV=production npx webpack
+	npx webpack
 
 develop:
 	npx webpack-dev-server
