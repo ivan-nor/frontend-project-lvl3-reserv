@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "build": "NODE_ENV=production npx webpack",
     "prepublishOnly": "npm run build"
   },
