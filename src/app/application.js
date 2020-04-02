@@ -1,36 +1,36 @@
-import { watch } from 'melanke-watchjs';
+// import { watch } from 'melanke-watchjs';
 
-const validation = () => {};
+// const validation = () => {};
 
-export default () => {
-  const state = {
-    inputValue: null,
-    isValid: {
-      input: true,
-      sumbit: false,
-    },
-  };
+// export default () => {
+// const state = {
+//   inputValue: null,
+//   isValid: {
+//     input: true,
+//     sumbit: false,
+//   },
+// };
 
 
-  watch(state, 'inputValue', () => {
-    console.log('change form value');
-  });
+// watch(state, 'inputValue', () => {
+//   console.log('change form value');
+// });
 
-  watch(state.isValid, () => {
-    console.log('isValid changed');
-  });
+// watch(state.isValid, () => {
+//   console.log('isValid changed');
+// });
 
-  // const form = document.querySelector('[data-form="rss"]');
-  // console.log(form.elements);
+// const form = document.querySelector('[data-form="rss"]');
+// console.log(form.elements);
 
-  // [...form.elements].forEach((element) => {
-  //   element.addEventListener('input', (event) => {
-  //     event.preventDefault();
-  //     state.inputValue = event.target.value;
-  //     state.isValid.input = validation(state.inputValue);
-  //     console.log('input');
-  //   });
-  // });
+// [...form.elements].forEach((element) => {
+//   element.addEventListener('input', (event) => {
+//     event.preventDefault();
+//     state.inputValue = event.target.value;
+//     state.isValid.input = validation(state.inputValue);
+//     console.log('input');
+//   });
+// });
 
-  return 'app/application.js is runned';
-};
+// };
+export default () => 'app/application.js is runned';
