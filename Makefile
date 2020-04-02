@@ -7,6 +7,9 @@ build:
 	rm -rf dist
 	npx webpack
 
+babel:
+	NODE_ENV=production babel src --out-dir dist --source-maps inline
+
 develop:
 	npx webpack-dev-server
 

@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "buildBabel": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "build": "webpack",
+    "build": "NODE_ENV=production npx webpack",
     "prepublishOnly": "npm run build"
   },
   "repository": {
