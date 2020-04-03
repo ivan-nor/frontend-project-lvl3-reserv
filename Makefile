@@ -1,23 +1,17 @@
-install: install-deps
-
-install-deps:
-	npm i
+install:
+	npm install
 
 build:
-	rm -rf dist
-	npx webpack
+	npm run build
 
-babel:
-	NODE_ENV=production babel src --out-dir dist --source-maps inline
-
-develop:
-	npx webpack-dev-server
+start:
+	npm run start
+	
+lint:
+	npx eslint .
 
 test:
 	npm test
 
 test-coverage:
 	npm test -- --coverage
-
-lint:
-	npx eslint .
