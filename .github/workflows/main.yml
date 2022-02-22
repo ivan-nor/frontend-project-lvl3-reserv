@@ -24,13 +24,13 @@ jobs:
       - name: Run linter
         run: |
           make lint
-        #   - name: Test & publish code coverage
-        # # Publish code coverage on Code Climate
-        # # https://github.com/paambaati/codeclimate-action
-        # uses: paambaati/codeclimate-action@v2.4.0
-        # # Add Code Climate secret key
-        # env:
-        #   CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        # with:
-        #   coverageCommand: make test-coverage
-        #   debug: true
+          - name: Test & publish code coverage
+        # Publish code coverage on Code Climate
+        # https://github.com/paambaati/codeclimate-action
+        uses: paambaati/codeclimate-action@v2.4.0
+        # Add Code Climate secret key
+        env:
+          CC_TEST_REPORTER_ID: ${{ d1353b7082477560d42c13c4c8d9d89b01e12a8cc017a38e4e706600b7bcdcdd }}
+        with:
+          coverageCommand: make test-coverage
+          debug: true
