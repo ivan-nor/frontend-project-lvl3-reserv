@@ -4,6 +4,7 @@ env:
   jest/globals: true
 extends:
   - airbnb-base
+plugins: ["jest", "html"]
 parserOptions:
   ecmaVersion: latest
   sourceType: module

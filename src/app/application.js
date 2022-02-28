@@ -11,7 +11,6 @@
 //   },
 // };
 
-
 // watch(state, 'inputValue', () => {
 //   console.log('change form value');
 // });
@@ -35,6 +34,4 @@
 // };
 export default () => {
   console.log('app/application.js is runned');
-
-  
 };
