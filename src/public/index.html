@@ -1,9 +1,14 @@
 <!doctype html>
 <html>
-  <%= require('html-loader!../templates/header.html') %>
+  <head>
+    <script defer src="main.js"></script>
+  </head>
+  <%= require('html-loader!../templates/header.html').default %>
+  <!-- <title>TITLE</title> -->
   <body>
-    <div id="app"></div>
-    <%= require('html-loader!../templates/jumbotron.html') %>
-    <%= require('html-loader!../templates/footer.html') %>
+    <div id="app">
+      <%= require('html-loader!../templates/jumbotron.html').default %>
+      <%= require('html-loader!../templates/footer.html').default %>
+    </div>
   </body>
 </html>

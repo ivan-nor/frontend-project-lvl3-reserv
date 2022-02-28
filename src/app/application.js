@@ -33,4 +33,8 @@
 // });
 
 // };
-export default () => 'app/application.js is runned';
+export default () => {
+  console.log('app/application.js is runned');
+
+  
+};
